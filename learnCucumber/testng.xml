@@ -10,4 +10,9 @@
 			</class>
 		</classes>
 	</test> <!-- Test -->
+	
+	<listeners>
+		<listener class-name="listener.CustListener"></listener>
+	</listeners>
+	
 </suite> <!-- Suite -->

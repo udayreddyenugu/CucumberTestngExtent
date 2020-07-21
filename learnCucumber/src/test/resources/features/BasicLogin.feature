@@ -8,7 +8,7 @@ Feature: Login
     Given user navigates to facebook website
     When user validates the homepage title
 
-  Scenario Outline: In order to verify login to facebook as "<username>" user
+  Scenario Outline: In order to verify login to facebook as <username> user
     Then user enters "<username>" username
     And user enters "<password>" password
     And user age selection
@@ -18,6 +18,6 @@ Feature: Login
     Then user "<loginType>" successfully logged in
 
     Examples: 
-      | username | password | loginType |
-      | valid    | valid    | should    |
-      | invalid  | invalid  | shouldnot |
+      | username 			| password 			| loginType |
+      | validuser1		| validuser1    | should    |
+      | invaliduser1  | invaliduser1  | shouldnot |
